@@ -5,3 +5,4 @@ __pycache__/
 *.py[cod]
 uploads/
 .DS_Store
+.idea
