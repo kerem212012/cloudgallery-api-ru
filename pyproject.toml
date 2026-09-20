@@ -1,0 +1,16 @@
+[project]
+name = "cloudgallery-api"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi[standard]>=0.139,<1",
+  "pydantic-settings>=2.10,<3",
+  "boto3>=1.39,<2",
+]
+
+[dependency-groups]
+dev = ["httpx2>=2,<3", "pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
